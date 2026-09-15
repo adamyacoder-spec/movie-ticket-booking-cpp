@@ -11,13 +11,13 @@ A robust, menu-driven **C++ Console Movie Ticket Booking System** for a single c
 
 ---
 
-## 🖼️ Program Execution Screenshots
+## 📷 Terminal Execution Screenshots
 
-### 1. Automated Test Suite Demo & Seat Layout Output
-![Automated Edge-Case Demo Screenshot](./screenshots/screenshot_demo_run.png)
+### 1. Successful Booking, Ticket Pass & Duplicate Rejection
+![Ticket Booking & Pass Generation](./screenshot_1_ticket_booking.png)
 
-### 2. Itemized Ticket Pass Output
-![Ticket Pass Output Screenshot](./screenshots/screenshot_ticket_pass.png)
+### 2. Failed Payment Handling, Cancellation & Seat Recovery Grid
+![Cancellation & Seat Recovery Matrix](./screenshot_2_cancellation_and_recovery.png)
 
 ---
 
@@ -55,7 +55,7 @@ A robust, menu-driven **C++ Console Movie Ticket Booking System** for a single c
 - **SRP (Single Responsibility)**: `PriceCalculator` prices seats, `TicketPrinter` formats passes, `BookingService` orchestrates workflows.
 - **OCP (Open-Closed)**: Adding new payment methods (e.g., `NetBankingPayment`) requires zero edits to existing service code.
 - **Liskov Substitution (LSP)**: Any derived payment class works seamlessly via `Payment*`.
-- **Interface Segregation (ISP)**: Minimal payment interface contract avoiding bloated methods like forced refunds.
+- **ISP (Interface Segregation)**: Minimal payment interface contract avoiding bloated methods like forced refunds.
 - **DIP (Dependency Inversion)**: `BookingService` depends on high-level `Payment` abstraction rather than concrete implementations.
 
 ---
@@ -67,9 +67,8 @@ movie_ticket_booking/
 ├── MovieTicketBooking.cpp              # Single-file complete C++ implementation
 ├── README.md                           # GitHub README documentation
 ├── TCS504_Assignment1_MovieTicketBooking.md # Full Academic Report (UML, Tables, SOLID)
-├── screenshots/                        # Actual program execution PNG screenshots
-│   ├── screenshot_demo_run.png
-│   └── screenshot_ticket_pass.png
+├── screenshot_1_ticket_booking.png     # Terminal execution demo screenshot 1
+├── screenshot_2_cancellation_and_recovery.png # Terminal execution demo screenshot 2
 ├── src/                                # Modular single-class C++ files (No headers)
 │   ├── Movie.cpp
 │   ├── Seat.cpp
