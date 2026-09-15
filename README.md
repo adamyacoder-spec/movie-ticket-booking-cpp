@@ -1,5 +1,6 @@
 # Movie Ticket Booking System 🎬🎟️
 **Course**: B.Tech. CSE (Semester V) | **Subject**: System Design (TCS-504)  
+**Author**: Adamya Vats ([@adamyacoder-spec](https://github.com/adamyacoder-spec))  
 **Language**: C++17 | **Architecture**: Object-Oriented Design & Clean Code (Zero Header Files)
 
 ---
@@ -43,7 +44,7 @@ A robust, menu-driven **C++ Console Movie Ticket Booking System** for a single c
 ### 2. SOLID Design Principles
 - **SRP (Single Responsibility)**: `PriceCalculator` prices seats, `TicketPrinter` formats passes, `BookingService` orchestrates workflows.
 - **OCP (Open-Closed)**: Adding new payment methods (e.g., `NetBankingPayment`) requires zero edits to existing service code.
-- **LSP (Liskov Substitution)**: Any derived payment class works seamlessly via `Payment*`.
+- **Liskov Substitution (LSP)**: Any derived payment class works seamlessly via `Payment*`.
 - **ISP (Interface Segregation)**: Minimal payment interface contract avoiding bloated methods like forced refunds.
 - **DIP (Dependency Inversion)**: `BookingService` depends on high-level `Payment` abstraction rather than concrete implementations.
 
@@ -111,4 +112,4 @@ For complete UML Class Diagrams, UML Sequence Diagrams, Class Responsibility Ana
 ---
 
 ## 👤 Author
-Developed as part of **TCS-504 System Design (B.Tech. CSE Semester V)**.
+Developed by **Adamya Vats** ([@adamyacoder-spec](https://github.com/adamyacoder-spec)) as part of **TCS-504 System Design (B.Tech. CSE Semester V)**.
