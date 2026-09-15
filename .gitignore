@@ -1,0 +1,12 @@
+# Executables and build artifacts
+*.exe
+*.o
+*.obj
+*.out
+*.dll
+
+# IDE and OS metadata
+.vscode/
+.vs/
+.DS_Store
+Thumbs.db
